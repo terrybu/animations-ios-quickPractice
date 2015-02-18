@@ -14,6 +14,8 @@
 		D9BA12771A951EAA0091620E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9BA12761A951EAA0091620E /* Images.xcassets */; };
 		D9BA127A1A951EAA0091620E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9BA12781A951EAA0091620E /* LaunchScreen.xib */; };
 		D9BA12861A951EAA0091620E /* Animations_PracticeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D9BA12851A951EAA0091620E /* Animations_PracticeTests.m */; };
+		D9BA12901A952EBD0091620E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9BA128F1A952EBD0091620E /* QuartzCore.framework */; };
+		D9BA12931A9530CF0091620E /* TerryView.m in Sources */ = {isa = PBXBuildFile; fileRef = D9BA12921A9530CF0091620E /* TerryView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,9 @@
 		D9BA127F1A951EAA0091620E /* Animations PracticeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Animations PracticeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9BA12841A951EAA0091620E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D9BA12851A951EAA0091620E /* Animations_PracticeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Animations_PracticeTests.m; sourceTree = "<group>"; };
+		D9BA128F1A952EBD0091620E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		D9BA12911A9530CF0091620E /* TerryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TerryView.h; sourceTree = "<group>"; };
+		D9BA12921A9530CF0091620E /* TerryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TerryView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9BA12901A952EBD0091620E /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +69,7 @@
 		D9BA125D1A951EAA0091620E = {
 			isa = PBXGroup;
 			children = (
+				D9BA128F1A952EBD0091620E /* QuartzCore.framework */,
 				D9BA12681A951EAA0091620E /* Animations Practice */,
 				D9BA12821A951EAA0091620E /* Animations PracticeTests */,
 				D9BA12671A951EAA0091620E /* Products */,
@@ -86,6 +93,8 @@
 				D9BA12701A951EAA0091620E /* ViewController.h */,
 				D9BA12711A951EAA0091620E /* ViewController.m */,
 				D9BA12731A951EAA0091620E /* Main.storyboard */,
+				D9BA12911A9530CF0091620E /* TerryView.h */,
+				D9BA12921A9530CF0091620E /* TerryView.m */,
 				D9BA12761A951EAA0091620E /* Images.xcassets */,
 				D9BA12781A951EAA0091620E /* LaunchScreen.xib */,
 				D9BA12691A951EAA0091620E /* Supporting Files */,
@@ -222,6 +231,7 @@
 				D9BA12721A951EAA0091620E /* ViewController.m in Sources */,
 				D9BA126F1A951EAA0091620E /* AppDelegate.m in Sources */,
 				D9BA126C1A951EAA0091620E /* main.m in Sources */,
+				D9BA12931A9530CF0091620E /* TerryView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
