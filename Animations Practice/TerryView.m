@@ -15,9 +15,8 @@
 // An empty implementation adversely affects performance during animation.
 - (void)drawRect:(CGRect)rect {
     [self drawRedDiagonalLine:rect];
-    
     [self drawZigzag:rect];
-  
+    [self drawCurvePractice:rect];
 }
 
 - (void) drawRedDiagonalLine: (CGRect) rect {
@@ -65,6 +64,19 @@
     
     CGContextStrokePath(ctx);
     CGPathRelease(path2);
+}
+
+- (void) drawCurvePractice: (CGRect) rect {
+    
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    CGMutablePathRef path = CGPathCreateMutable();
+    CGContextBeginPath(context);
+    CGPathMoveToPoint(path, NULL, 0, 300);
+    CGPathAddCurveToPoint(path, NULL, 100, 100, 300, 200, rect.size.width, 300);
+    CGContextAddPath(context, path);
+    CGContextSetStrokeColorWithColor(context, [UIColor yellowColor].CGColor);
+    CGContextStrokePath(context);
+    CGPathRelease(path);
 }
 
 
