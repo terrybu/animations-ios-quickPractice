@@ -38,6 +38,7 @@
     CGPathRelease(path); //release seems necessary because these CG objects are not managed by ARC
 }
 
+//test
 
 - (void) drawZigzag: (CGRect) rect {
     //I want to draw a zigzag this second time
