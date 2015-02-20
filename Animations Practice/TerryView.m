@@ -40,7 +40,6 @@
 
 
 - (void) drawZigzag: (CGRect) rect {
-    
     //I want to draw a zigzag this second time
     //Think of it as a pen. You begin the path by starting from a point (movetopoint first time)
     //Then you add line or curve or whatever starting from that point to a destination)
@@ -67,7 +66,6 @@
 }
 
 - (void) drawCurvePractice: (CGRect) rect {
-    
     CGContextRef context = UIGraphicsGetCurrentContext();
     CGMutablePathRef path = CGPathCreateMutable();
     CGContextBeginPath(context);
